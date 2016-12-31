@@ -1,1 +1,3 @@
 mongolab.env
+tmp/
+node_modules
