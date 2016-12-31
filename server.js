@@ -7,7 +7,7 @@ const app = express();
 const router = require('./router');
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost:auth/todo');
+mongoose.connect(process.env.MONGO_LAB_KEY);
 
 // App setup
 app.use(morgan('combined'));
