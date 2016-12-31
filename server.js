@@ -16,7 +16,7 @@ app.use(express.static('public'));
 app.set('view engine', 'ejs');
 router(app);
 //Server setup
-const PORT = 8090;
+const PORT = process.env.PORT || 8090;
 const server = http.createServer(app);
 server.listen(PORT);
 console.log('listening on port: ', PORT);
